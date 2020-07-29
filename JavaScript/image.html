@@ -33,7 +33,7 @@
             <section>
 				<div class="center">
 					<div>
-						<img src="ing1.jpg" id="bigimg">
+						<img src="img1.jpg" id="bigimg">
 					</div>
 
 					<ul>
@@ -81,9 +81,11 @@
 			'use strict';
 			
 			const thumbs = document.querySelectorAll('.thumb');
+
+			//配列の処理
 			thumbs.forEach(function(item, index){
 				item.onclick = function() {
-					console.log(this.dataset.image);
+					document.getElementById('bingimg').src = this.dataset.image;
 				}
 			});
         </script>
