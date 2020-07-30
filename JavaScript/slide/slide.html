@@ -49,6 +49,10 @@
                 height: 16px;
                 background: url(images/arrow-right.svg) no-repeat;
             }
+
+            #page{
+                color: white;
+            }
         </style>
     </head>
 
@@ -78,6 +82,7 @@
                     <div class="toolbar">
                         <div class="nav">
                             <div id="prev"></div>
+                            <div id="pages"></div>
                             <div id="next"></div>
                         </div>
                     </div>
@@ -108,7 +113,7 @@
             document.getElementById('next').onclick = function(){
                 changeImage(1);
             };
-            
+
         </script>
 
     </body>
