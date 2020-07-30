@@ -97,6 +97,10 @@
             'use strict';
 
             const images = ['images/image1.jpg','images/image2.jpg','images/image3.jpg','images/image4.jpg','images/image5.jpg'];
+            images.forEach(function(item,index){
+                preloadImage(item);
+            });
+
             let current = 0;
 
             function chageImage(num){
@@ -111,8 +115,13 @@
                 document.getElementById('page').textContent = '${current + 1}/${images.length}';
             }
 
-            pageNum();
+            function preloadImage(path){
+                let imgTag = document.createElement('img');
+                imgTag.src = path;
+            }
             
+            pageNum();
+
             document.getElementById('prev').onclick = function(){
                 changeImage(-1);
             };
