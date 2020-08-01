@@ -17,7 +17,7 @@
 
     <body>
 
-        <div id="wrapper"　class="show">
+        <div id="wrapper">
 
             <header>
 
@@ -84,7 +84,7 @@
 
         </div>
 
-        <nav id="nav" class="show">
+        <nav id="nav">
             <div class="logo">
                 <img src="logo.svg" alt="">
             </div>
@@ -96,11 +96,19 @@
                 <li><a href="#">カフェ検索</a></li>
                 <li><a href="#">お問い合わせ</a></li>
             </ul>
-
+            
         </nav>
 
+        <script src="../../_common/scripts/jquery-3.4.1.min.js"></script>
         <script>
             'use strict';
+
+            $(document).ready(function(){
+                $('#open_nev').on('click',function(){
+                    $('#wrapper,#mav').toggleClass('show');
+                });
+            });
+            
         </script>
 
     </body>
