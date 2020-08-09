@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+
+        <title>template</title>
+
+        <link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+
+        <style>
+            .list{
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            .list h2{
+                margin: 0 0 2em 0;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .semner{
+                float: left;
+                margin: 10px 10px 10px 0;
+                border: 1px solid #23628f;
+                padding: 4px;
+                width: 25%;
+            }
+
+            .check{
+                margin: 0;
+                padding: 8px;
+                font-size: 12px;
+                color: #ffffff;
+                background-color: #23628f;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .red{
+                background-color: #e33a6d;
+            }
+
+            .green{
+                background-color: green;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header-contents">
+
+                <h1>空き席状況を確認</h1>
+
+                <h2>データをもとに表示を切り替える</h2>
+
+            </div><!-- /.header-contents -->
+
+        </header>
+
+        <div class="main-wrapper">
+
+                <section>
+                    <ul class="list">
+                        <li class="seminar" id="js">
+                            <h2>JavaScript勉強会</h2>
+                            <p class="check">空き席状況を確認</p>
+                        </li>
+                        <li class="seminar" id="aiux">
+                            <h2>AIを利用したUX設計</h2>
+                            <p class="check">空き席状況を確認</p>
+                        </li>
+                    </ul>
+                </section>
+
+        </div><!-- /.main-wrapper -->
+
+        <footer>JavaScript Samples</footer>
+        
+        <script src="../../_common/scripts/jquery-3.4.1.min.js"></script>
+        <script>
+            'use strict';
+        </script>
+
+    </body>
+    
+</html>
